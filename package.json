@@ -1,0 +1,24 @@
+{
+  "name": "tejeria-site",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "lerna run dev --parallel",
+    "dev-web": "lerna run dev --scope=web",
+    "dev-studio": "lerna run dev --scope=studio",
+    "build-web": "lerna bootstrap && (cd web && npm run build)",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "workspaces": [
+    "studio",
+    "web"
+  ],
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {},
+  "devDependencies": {
+    "lerna": "^8.0.0"
+  }
+}
